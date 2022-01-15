@@ -1,0 +1,255 @@
+/* font design link    */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box ;
+    
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 236, 237);
+}
+.color-high{
+    color:cornflowerblue;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.love-button{
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color:cornflowerblue ;
+    border: 4px solid cornflowerblue ;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 12px;
+    transition: .5s linear;
+}
+.love-button:hover{
+    background-color:transparent;
+    color: cornflowerblue; 
+}
+.sec-title{
+    text-align: center;
+}
+.sec-title h2{
+    font-size: 30px;
+    display: inline-block;
+    margin: 50px 0;
+    text-transform: uppercase;
+    margin-bottom:70px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.nav-title p{
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.banner-left h1{
+    font-size: 45px;
+    color: black;
+    margin-bottom: 10px;
+}
+.banner-left p{
+    margin-bottom: 20px;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.banner-right p{
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+
+}
+.banner-right{
+    display: flex;
+    justify-content:flex-end ;
+}
+
+/* collection part css----------
+------------------------------  */
+.feature{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap:15px;
+    
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: burlywood;
+}
+.card{
+    width: 340px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(216, 205, 206);
+    border-radius:5px;
+    background-color: white;
+    opacity: 0.8;
+
+}
+.card:hover{
+   opacity: 1;
+   cursor: pointer;
+   box-shadow: 0px 12px 9px 2px #888888;
+}
+.card > p{
+    font-weight: bold;
+}
+.card-text{
+    color: rgb(167, 139, 139);
+}
+.seemore h3{
+    display:inline-block;
+}
+.seemore{
+    text-align: right;
+    margin-right: 35px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* contact part css 
+-------------------- */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border:1px solid cornflowerblue ;
+
+}
+
+/* footer part--------- 
+-------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    margin-top: 50px;
+    background: rgb(31, 31, 73);
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+/* ---------------css responsive ------------- */
+
+@media (max-width:914px){
+    .feature{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .banner-left h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:800px){
+    .banner{
+        grid-template-columns: 1fr;
+
+    }
+    .feature{
+        grid-template-columns: 1fr;  
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 500px;
+    }
+    .feature{
+    max-width: 350px;
+    text-align: center;
+}
+    .banner-left{
+        order: 2;
+
+    }
+}
+
+
